@@ -1,8 +1,5 @@
-import random
-import numpy as np
 import torch
 import torch.nn as nn #graphs
-import torch.optim as optim #further optimization algorithms
 import torch.nn.functional as F
 
 class DQN(nn.Module):
