@@ -16,6 +16,7 @@ class DQN(nn.Module):
     self.fc1 = nn.Linear(input_shape, 64)
     self.fc2 = nn.Linear(64, 64)
     self.fc3 = nn.Linear(64, num_actions)
+    #why did we choose fully connected over convolutional layers here?
 
   def forward(self, x):
     x = F.relu(self.fc1(x))
